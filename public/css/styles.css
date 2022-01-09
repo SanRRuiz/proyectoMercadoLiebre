@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto", sans-serif;
+  font-size: 12px;
+  background-color: #ebebeb;
+  text-align: center;
+}
+.header{
+  background-color: #eac926;
+}
+.barra{
+  margin-left: 20px;
+}
+.logo {
+  padding: 15px;
+  width: 60%;
+}
+.lupa {
+  font-size: 18px;
+  border: solid 1px grey;
+  background-color: #ebebeb;
+}
+.camion{
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+}
+.fa-truck{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  color: #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  animation-name: camion;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  text-align: right;
+}
+
+@keyframes camion{
+  0% {opacity: 0;}
+  100% {transform: rotate(-90deg);opacity: 1;}
+}
+.formulario{
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.control-form{
+  text-align: center;
+  padding: 10px;
+}
+.control-form label{
+  font-style: oblique;
+  line-height: 3em;
+  padding: 5px;
+  font-size: 15px;
+  color: darkslategrey;
+  border-radius: 13px;
+}
+.control {
+  width: 80vw;
+  padding: 8px;
+  border-radius: 15px;
+}
+.boton{
+  border-radius: 10px;
+  color: darkslategray;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.control-form-div{
+  padding: 3px;
+  text-align: center;
+  margin: 10px;
+}
+.control-form-div label{
+  font-style: oblique;
+  line-height: 8px;
+  padding: 5px;
+  font-size: 15px;
+  color: darkslategrey;
+  border-radius: 13px;
+}
+.control-form-sub{
+  text-align: left;
+  font-style: oblique;
+  color: darkslategray;
+  font-size: 15px;
+}
+.control-sub{
+  width: auto;
+  padding: 5px;
+  border-radius: 15px;
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.control.boton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.boton-sub{
+  border-radius: 10px;
+  color: darkslategray;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+} 
+.caracteristicas{
+  border-top: solid 1px #ebebeb;
+  background-color: white;
+  width: 90vw;
+  margin: auto;
+  padding: 15px;
+  position: relative;
+}
+.caracteristicas:hover .descripciones{
+  display: block;
+  opacity: 1;
+}
+
+.titulares {
+  font-size: 24px;
+  color: #666666;
+  text-align: center;
+}
+#precios {
+  font-size: 18px;
+  flex-grow: 0.30;
+}
+.descuentos {
+  font-size: 16px;
+  color: green;
+}
+.precioYDescuento{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0.30;
+  margin-bottom: 20px;
+}
+.descripciones{
+  display: none;
+  font-size: 16px;
+  transition: all 1000ms;
+  opacity: 0;
+}
+.burguer-menu {
+  font-size: 50px;
+  text-align: center;
+}
+.banner {
+  width: 100vw;
+}
+.articulo-centrado {
+  text-align: center;
+}
+.icono {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+.main {
+  background-color: #ebebeb;
+  text-align: center;
+  line-height: 10px;
+}
+.fa-bars {
+  margin: 10px;
+  padding: 10px;
+  background-color: #1259c3;
+  color: white;
+  font-size: medium;
+  border-radius: 5px;
+}
+.footer {
+  text-align: center;
+  background-color: white;
+  margin: 10px;
+  padding: 50px;
+}
+.navbar{
+  display: none;
+}
+.navbar ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar a{
+  text-decoration: none;
+  color: #222;
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 17px;
+}
+.compras{
+  font-weight: 250px;
+  text-align: center;
+}
+.productosSuperiores{
+  margin: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.articuloSuperiores:hover{
+  box-shadow: 100px;
+}
+.articuloSuperiores{
+  flex: 100%;
+  box-shadow: 0px;
+  transition: all 1000ms;
+}
+
+@media (min-width:361px){
+  .body{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .burguer-menu{
+    display: none;
+  }
+  .descripciones{
+    display: block;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar ul{
+    display: flex;
+    margin-top: 10px;
+  }
+  .navbar il{
+    margin: 0px 15px;
+  }
+  .navbar a{
+    margin-right: 8px;
+  }
+  .contenedorSuperior{
+    display: flex;
+    justify-content: space-between;
+  }
+  .compras {
+    font-weight: 400;
+    max-width: 350px;
+    text-align: right;
+  }
+  .articuloSuperiores{
+    width: 50%;
+    margin: 10px;
+    flex: 45%;
+  }
+}
+@media (min-width: 769px){
+  .burguer-menu{
+    display: none;
+  }
+  .descripciones{
+    display: block;
+  }
+  .navbar{
+    display: flex;
+    margin-top: 40px;
+  }
+  .contenedorSuperior, .navbar{
+    max-width: 1200px;
+    margin: 0px;
+  }
+  .contenedorSuperior{
+    align-items: center;
+  }
+  .compras{
+    margin: 0px;
+    max-width: none;
+    font-size: 22px;
+    font-weight: 300px;
+  }
+  .navbar li{
+    margin: 0px 10px;
+  }
+  .navbar a{
+    font-size: 19px;
+  }
+
+}
